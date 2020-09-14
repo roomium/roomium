@@ -1,13 +1,13 @@
-import Vue from 'vue'
-import App from './components/App.vue'
+import Vue from 'vue';
+import App from './components/App.vue';
 
-import router from './router'
+import router from './router';
 
 // disable vue production tips
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 
 new Vue({
     router,
     ...App,
-}).$mount("#app")
+}).$mount("#app");

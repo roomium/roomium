@@ -4,7 +4,7 @@ var info = {
     api_version : '1.0.0',
     author : 'Roomium Developent Team.',
     maintainer : [
-        'MOH ASKHIYAK <pentingmain@gmail.com>',
+        {},
     ],
     github : 'https://github.com/roomium'
 }
