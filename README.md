@@ -6,13 +6,13 @@ Before you install roomium make sure you have node.js v12+
 and npm v6+ already installed on your machine.
 * CLONE SOURCE FROM GITHUB
   
-    ```
+    ```console
     ~# git clone http://github.com/roomium/roomium.git
     ```
 
 * INSTALL
   
-    ```
+    ```console
     ~# cd roomium
     ~# npm install
     ```
