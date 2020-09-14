@@ -35,7 +35,7 @@ Before you install Roomium , you would need the following to get started :
 
 ### Database Support
 
-this is list of supported database for roomium :
+This is list of supported database for roomium :
 - Mysql
 - MariaDB
 - PostgreSQL
