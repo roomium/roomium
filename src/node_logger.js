@@ -6,6 +6,10 @@ var logger = {
         console.log(`[${chalk.cyan('LOG')}] ${data}`);
     },
 
+    url_log : (data)=>{
+        console.log(`[${chalk.cyan('URL-LOG')}] ${data}`);
+    },
+
     warning : (data)=>{
         console.log(`[${chalk.yellow('WARNING')}] ${data}`);
     },
@@ -19,7 +23,7 @@ var logger = {
     },
 
     web : (request,response,next)=>{
-        logger.log(`Request URL : ${chalk.yellow(request.get('host')+request.url)}.`)
+        logger.url_log(`Request URL : ${chalk.yellow(request.protocol+'://'+request.get('host')+request.url)}.`)
         next()
     }
 }

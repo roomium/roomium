@@ -1,7 +1,12 @@
 var logger = require('./node_logger')
 var chalk = require('chalk')
 var express = require('express')
+var path = require('path')
 require('dotenv').config()
+
+function rootPath(){
+    return path.dirname(require.main.filename||process.mainModule.filename)
+}
 
 function NodeBaseWeb(http,app){
 
@@ -17,6 +22,9 @@ function NodeBaseWeb(http,app){
     }
 
     app.use('/api',require('../src/router'))
+    app.use('*',(req,res)=>{
+        res.sendFile(rootPath()+"/src/web/index.html")
+    })
 
     http.listen(APP_PORT,APP_HOST,()=>{
         logger.log(`Launched on : http:${APP_HOST}:${APP_PORT}.`)
