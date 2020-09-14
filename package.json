@@ -4,7 +4,14 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "mix-dev": "npm run mix-development",
+    "mix-development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "mix-watch": "npm run mix-development -- --watch",
+    "mix-watch-poll": "npm run watch -- --watch-poll",
+    "mix-hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --disable-host-check --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "mix-prod": "npm run mix-production",
+    "mix-production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -18,12 +25,19 @@
   },
   "homepage": "https://github.com/roomium/roomium-server#readme",
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "axios": "^0.20.0",
+    "cross-env": "^7.0.2",
+    "laravel-mix": "^5.0.5",
+    "loadash": "^1.0.0",
+    "nodemon": "^2.0.4",
+    "resolve-url-loader": "^3.1.1",
+    "vue-template-compiler": "^2.6.12"
   },
   "dependencies": {
     "chalk": "^4.1.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "helmet": "^4.1.1"
+    "helmet": "^4.1.1",
+    "vue": "^2.6.12"
   }
 }
