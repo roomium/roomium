@@ -12,6 +12,7 @@ let mix = require('laravel-mix');
  */
 
 mix.js('src/web/app.js', 'web/js')
+.js('src/web/js/auth/login.js','web/js/auth/')
 
 // Full API
 // mix.js(src, output);
