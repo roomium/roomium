@@ -1,5 +1,6 @@
 var logger = require('./node_logger')
 var chalk = require('chalk')
+var express = require('express')
 require('dotenv').config()
 
 function NodeBaseWeb(http,app){
@@ -7,6 +8,8 @@ function NodeBaseWeb(http,app){
     var APP_PORT = process.env.APP_PORT || 8000,
     APP_HOST = process.env.APP_HOST || 'localhost',
     APP_DEBUG = process.env.APP_DEBUG || 'false'
+
+    app.use(express.static('web'))
 
     if(APP_DEBUG=='true')
     {
