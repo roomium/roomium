@@ -27,7 +27,7 @@ function NodeBaseWeb(http,app){
 
     http.listen(APP_PORT,APP_HOST,() => {
         
-        logger.log(`Launched on : http:${APP_HOST}:${APP_PORT}.`);
+        logger.log(`Launched on : http://${APP_HOST}:${APP_PORT}.`);
 
         if(APP_DEBUG==="true")
         {
