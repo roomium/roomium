@@ -12,11 +12,11 @@ Roomium is an open source software that focuses on developing online classroom s
 
 We are trying to make a system where
 
-- **EASY TO USE** : We tried to make roomium easy to operate with a friendly and simple design.
+- **EASY TO USE**   : We tried to make roomium easy to operate with a friendly and simple design.
 
-- **SAFE** : We make roomium as safe as possible in order to protect your privacy.
+- **SAFE**  : We make roomium as safe as possible in order to protect your privacy.
 
-- **FREE** : Roomium is basically free and you can customize it.
+- **FREE**  : Roomium is basically free and you can customize it.
 
 ## Roomium Profesional
 
@@ -29,9 +29,17 @@ The following instruction will get you copy of the roomium project and you can r
 ### Prerequisites
 
 Before you install Roomium , you would need the following to get started :
-* **NodeJS** : You need install [Current NodeJS](https://nodejs.org/en/download/current/) or [NodeJS LTS](https://nodejs.org/en/download/)
-* **OS** : You can run roomium on Windows , Linux or Mac.
-* **DATABASE** : You need install database server.
+* **NodeJS**    : You need install [Current NodeJS](https://nodejs.org/en/download/current/) or [NodeJS LTS](https://nodejs.org/en/download/)
+* **OS**    : You can run roomium on Windows , Linux or Mac.
+* **DATABASE**  : You need install database server.
+
+### Database Support
+
+this is list of supported database for roomium :
+- Mysql
+- MariaDB
+- PostgreSQL
+- MS SQL Server
 
 ### Installing 
 
