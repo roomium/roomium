@@ -1,27 +1,22 @@
-<h2 align="center">Roomium</h2>
+# ROOMIUM
 
-### INSTALLATION 
+## Table of contents
 
-Before you install roomium make sure you have node.js v12+ 
-and npm v6+ already installed on your machine.
-* CLONE SOURCE FROM GITHUB
-  
-    ```console
-    ~# git clone http://github.com/roomium/roomium.git
-    ```
+- [What is Roomium?](#what-is-roomium)
+- [Roomium Profesional](#roomium-profesional)
 
-* INSTALL
-  
-    ```console
-    ~# cd roomium
-    ~# npm install
-    ```
+## What is Roomium
 
-### DATABASE SUPPORT
+Roomium is an open source software that focuses on developing online classroom systems.
 
-This is a list of database can be use for roomium.
+We are trying to make a system where
 
-* MYSQL
-* PGSQL
-* MARIADB
-* MS SQL SERVER
+- **EASY TO USE** : We tried to make roomium easy to operate with a friendly and simple design.
+
+- **SAFE** : We make roomium as safe as possible in order to protect your privacy.
+
+- **FREE** : Roomium is basically free and you can customize it.
+
+## Roomium Profesional
+
+Even though Roomium is free, you can try Roomium Professional where you don't have to bother preparing what you need to install Roomium, because your Roomium will be installed on our cloud.
