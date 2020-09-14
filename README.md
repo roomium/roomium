@@ -45,7 +45,7 @@ this is list of supported database for roomium :
 
 Clone or download copy of roomium from github. After your unzipped the file. you should go to insde the roomium folder and open terminal or command prompt and follow this step :
 
-```console
-    ~# npm install
-    ~# npm run roomium
+```shell
+    ~$ npm install
+    ~$ npm run roomium
 ```
