@@ -7,7 +7,7 @@ var logger = {
     },
 
     url_log : (data)=>{
-        console.log(`[${chalk.cyan('URL-LOG')}] ${data}`);
+        console.log(`[${chalk.cyan('SERVER')}] ${data}`);
     },
 
     warning : (data) => {
@@ -23,7 +23,7 @@ var logger = {
     },
 
     web : (request,response,next) => {
-        logger.url_log(`Request URL : ${chalk.yellow(request.protocol+'://'+request.get('host')+request.url)}.`);
+        logger.url_log(`${chalk.yellow(request.protocol+'://'+request.get('host')+request.url)}.`);
         next()
     }
 }
