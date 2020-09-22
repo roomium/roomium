@@ -15990,10 +15990,22 @@ __webpack_require__.r(__webpack_exports__);
 
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
+
+function beforeEach(to, from, next) {
+  if (to.meta.title) {
+    document.title = "Roomium - " + to.meta.title;
+  } else {
+    document.title = "Roomium";
+  }
+
+  next();
+}
+
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   mode: 'history',
   routes: __webpack_require__(/*! ./routes */ "./src/web/router/routes.js")
 });
+router.beforeEach(beforeEach);
 /* harmony default export */ __webpack_exports__["default"] = (router);
 
 /***/ }),
@@ -16008,7 +16020,10 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
 var routes = [{
   path: '/login',
   name: 'login',
-  component: __webpack_require__(/*! ../components/auth/Login.vue */ "./src/web/components/auth/Login.vue")["default"]
+  component: __webpack_require__(/*! ../components/auth/Login.vue */ "./src/web/components/auth/Login.vue")["default"],
+  meta: {
+    title: 'Sig In'
+  }
 }];
 module.exports = routes;
 
@@ -16021,7 +16036,7 @@ module.exports = routes;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/draco/worksheet/roomium/roomium/src/web/app.js */"./src/web/app.js");
+module.exports = __webpack_require__(/*! /home/draco/worksheet/roomium/src/web/app.js */"./src/web/app.js");
 
 
 /***/ })

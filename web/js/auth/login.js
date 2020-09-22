@@ -104,7 +104,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/draco/worksheet/roomium/roomium/src/web/js/auth/login.js */"./src/web/js/auth/login.js");
+module.exports = __webpack_require__(/*! /home/draco/worksheet/roomium/src/web/js/auth/login.js */"./src/web/js/auth/login.js");
 
 
 /***/ })
