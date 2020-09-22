@@ -28,7 +28,7 @@ function rootPath(){
 function NodeBaseWeb(http,app){
     app.use(express.static("web"));
     app.use(helmet())
-    if(config.APP_DEBUG==="true")
+    if(config.APP_DEBUG)
     {
         app.use(logger.web);
     }
