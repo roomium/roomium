@@ -11,7 +11,7 @@ var chalk = require('chalk');
 var express = require('express');
 var path = require('path');
 var helmet = require('helmet')
-var config = require('./config/app.config')
+var config = require('../config/app.config')
 
 /**
  * @return { String } root path
