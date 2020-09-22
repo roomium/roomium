@@ -10,7 +10,7 @@ var routes = [
     {
         path: '/login',
         name: 'login',
-        component: require('../components/auth/Login.vue').default,
+        component: require('../pages/auth/Login.vue').default,
         meta: {
             title: 'Sig In'
         }
