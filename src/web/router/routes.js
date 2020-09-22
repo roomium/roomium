@@ -1,3 +1,11 @@
+/**
+ * Roomium 
+ * 
+ * Roomium is a Open source project class room system.
+ * 
+ * copyright (c) Roomium developers team.
+ * 
+ */
 var routes = [
     {
         path: '/login',

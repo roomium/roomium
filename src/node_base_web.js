@@ -10,14 +10,14 @@ var logger = require('./node_logger');
 var chalk = require('chalk');
 var express = require('express');
 var path = require('path');
-var helmet = require('helmet')
-var config = require('../config/app.config')
+var helmet = require('helmet');
+var config = require('../config/app.config');
 
 /**
  * @return { String } root path
  */
 function rootPath(){
-    return path.dirname(require.main.filename||process.mainModule.filename)
+    return path.dirname(require.main.filename||process.mainModule.filename);
 }
 
 /**
@@ -27,13 +27,13 @@ function rootPath(){
  */
 function NodeBaseWeb(http,app){
     app.use(express.static("web"));
-    app.use(helmet())
+    app.use(helmet());
     if(config.APP_DEBUG)
     {
         app.use(logger.web);
     }
     /** Create API Router */
-    app.use('/api',require('../src/router'))
+    app.use('/api',require('../src/router'));
     /** Send HTML File to any route except API. */
     app.use('*',(req,res) => {
         res.sendFile(rootPath()+"/src/web/index.html");
@@ -43,4 +43,4 @@ function NodeBaseWeb(http,app){
     });
 }
 
-module.exports = NodeBaseWeb
+module.exports = NodeBaseWeb;
