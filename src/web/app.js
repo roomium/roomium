@@ -10,6 +10,6 @@ Vue.config.productionTip = false;
 import './components/index'
 
 new Vue({
-    router,
+    router: router,
     ...App,
 }).$mount("#app");
