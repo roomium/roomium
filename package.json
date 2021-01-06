@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/roomium/roomium-server#readme",
   "devDependencies": {
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "cross-env": "^7.0.2",
     "laravel-mix": "^5.0.5",
     "loadash": "^1.0.0",
